@@ -88,3 +88,45 @@ import matplotlib.pyplot as plt
 
 
 #  Exercise 6
+
+# days = [1,2,3,4,5,6]
+# inventory = [50, 50, 40, 40, 70, 70]
+#
+# fig, ax = plt.subplots()
+# ax.plot(days, inventory, label='Inventory not stepped', color='red')
+# ax.plot(days, inventory, drawstyle='steps-post', label="Inventory stepped", color='blue')
+# ax.legend()
+# ax.set_title('Inventory over time')
+#
+# plt.show()
+
+
+# Exercise 7
+
+# x = [0, 1, 2, 3, 4]
+# y = [100, 102, 101, 103, 104]
+#
+# fig1, ax1 = plt.subplots()
+# ax1.plot(x, y)
+# plt.show()
+#
+# fig2, ax2 = plt.subplots()
+# ax2.plot(x, y)
+# ax2.set_ylim(0, 200)
+# plt.show()
+
+
+#  Exercise 8
+
+# years = [2000, 2005, 2010, 2015, 2020]
+# revenue = [2, 3, 5, 8, 13]
+#
+# fig, ax = plt.subplots()
+# ax.plot(years, revenue)
+# ax.set_xlabel('Year')
+# ax.set_ylabel('Revenue')
+# ax.set_title('Revenue vs Year')
+# ax.set_xticks([2000, 2010, 2020])
+# ax.tick_params(rotation=45)
+# plt.tight_layout()
+# plt.show()
