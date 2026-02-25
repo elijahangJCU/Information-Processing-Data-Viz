@@ -1,6 +1,8 @@
 # Exercise 1 — Environment + first plot
 
 import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 
 # Exercise 1
 
@@ -130,3 +132,20 @@ import matplotlib.pyplot as plt
 # ax.tick_params(rotation=45)
 # plt.tight_layout()
 # plt.show()
+
+#  Example
+
+df = pd.DataFrame({
+    "Year": [2020, 2021, 2022, 2023],
+    "Sales": [100, 120, 150, 180]
+})
+
+fig, ax = plt.subplots()
+
+# Seaborn line
+sns.lineplot(x="Year", y="Sales", data=df, ax=ax)
+
+# Matplotlib horizontal reference line
+ax.axhline(140, color="red", linestyle="--")
+
+plt.show()
